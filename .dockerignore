@@ -1,0 +1,47 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Bytecode and cache
+*.pycache
+*.egg-info/
+.eggs/
+*.egg
+*.pkl
+*.db
+
+# Environment files
+.env
+.venv/
+venv/
+env/
+ENV/
+.uv/
+.uv-env/
+.uv-cache/
+pip-wheel-metadata/
+site/
+
+# Misc
+*.log
+*.sqlite3
+*.coverage
+coverage.xml
+.cache/
+.mypy_cache/
+.pytest_cache/
+.dmypy.json
+.pyre/
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

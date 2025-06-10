@@ -1,0 +1,16 @@
+services:
+  reaper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reaper
+    ports:
+      - "8000:8000/tcp"
+      - "9000:9000/udp"
+      - "9001:9001/udp"
+    environment:
+      REAPER_LISTEN_IP: 0.0.0.0
+      REAPER_LISTEN_PORT: 9000
+      REAPER_SEND_HOST: host.docker.internal
+      REAPER_SEND_PORT: 9001
+    restart: unless-stopped
